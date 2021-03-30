@@ -10,20 +10,18 @@ export class Header {
     }
 
     showListAnimate() {
+        const menuAnimation = (translateValue = 0) => {
+            this.headerMenuList.animate([{
+                transform: `translateX(${translateValue}px)`
+            }], {
+                duration: 300,
+                fill: 'forwards'
+            });
+        }
         if (this.showList) {
-            this.headerMenuList.animate([{
-                transform: 'translateX(-200px)'
-            }], {
-                duration: 300,
-                fill: 'forwards'
-            });
+            menuAnimation(-200)
         } else {
-            this.headerMenuList.animate([{
-                transform: 'translateX(0)'
-            }], {
-                duration: 300,
-                fill: 'forwards'
-            });
+            menuAnimation()
         }
         this.showList = !this.showList
     }

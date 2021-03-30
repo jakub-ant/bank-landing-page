@@ -1,0 +1,47 @@
+/* .top-banner */
+@media (max-width: 575px) {
+    .top-banner {
+        position: relative;
+        min-height: 40rem;
+        width: 100vw;
+        background: url('../../public/interior-3539570_640.jpg') center no-repeat;
+        z-index: -1;
+    }
+}
+
+/* .top-banner-slogan */
+@media (max-width: 575px) {
+    .top-banner-slogan {
+        position: absolute;
+        left: 3rem;
+        bottom: 15rem;
+        margin: 1rem;
+    }
+}
+
+/* .top-banner-slogan-text */
+@media (max-width: 575px) {
+    .top-banner-slogan-text {
+        background-color: var(--top-banner-elements-bgc);
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .top-banner-slogan-text span {
+        font: 3rem 'Roboto', sans-serif;
+        color: var(--top-banner-elements-color);
+    }
+}
+
+/* .top-banner-know-more */
+@media (max-width: 575px) {
+    .top-banner-know-more {
+        margin: 2rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        background-color: var(--top-banner-elements-bgc);
+        color: var(--top-banner-elements-color);
+        font: 700 1.4rem 'Roboto', sans-serif;
+
+    }
+}

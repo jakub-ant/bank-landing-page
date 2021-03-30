@@ -1,5 +1,7 @@
 :root {
-    --header-color: #7799ec;
-    --button-color: rgba(108, 108, 236, 0.815);
-    --menu-list-color: rgb(140, 152, 255);
+    --header-color: rgb(121, 199, 223);
+    --button-color: rgba(79, 156, 170, 0.815);
+    --menu-list-color: rgb(148, 172, 204);
+    --top-banner-elements-bgc: rgb(78, 188, 252);
+    --top-banner-elements-color: rgba(245, 245, 245, 0.8);
 }
