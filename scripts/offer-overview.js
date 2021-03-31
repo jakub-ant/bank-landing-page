@@ -3,7 +3,11 @@ export class OfferOverview {
     carouselBtnRight = document.querySelector('.carousel-btn-right');
     offerOverviewCarousel = document.querySelector('.offer-overview-carousel')
     translateValue = 100;
-    animationDuration = 300
+    animationDuration = 300;
+    animationMoved = {
+        state: false,
+        direction: null
+    }
     constructor() {
         this.setListeners()
     }
@@ -13,27 +17,38 @@ export class OfferOverview {
     }
 
     translate(e) {
-        const direction = e.target.dataset.direction;
- 
-        switch (direction) {
+        const checkAnimation = () => {
+            const direction = e.target.dataset.direction
+            if (this.animationMoved.state && !(this.animationMoved.direction == direction)) {
+                return 'reset';
+            } else {
+                return direction;
+            }
+        }
+        const animateCarousel = (translateValue = 0) => {
+            this.offerOverviewCarousel.animate([{
+                transform: `translateX(${translateValue}px)`
+            }], {
+                duration: this.animationDuration,
+                fill: 'forwards'
+            })
+        }
+        switch (checkAnimation()) {
+            case 'reset':
+                this.animationMoved.state = false;
+                this.animationMoved.direction = null
+                animateCarousel()
+                break;
             case 'left':
-                this.offerOverviewCarousel.animate([{
-                    transform: `translateX(-${this.translateValue}px)`
-                }], {
-                    duration: this.animationDuration,
-                    fill: 'backwards'
-                })
+                this.animationMoved.state = true;
+                this.animationMoved.direction = 'left'
+                animateCarousel(-this.translateValue)
                 break;
             case 'right':
-                this.offerOverviewCarousel.animate([{
-                    transform: `translateX(${this.translateValue}px)`
-                }], {
-                    duration: this.animationDuration,
-                    fill: 'backwards'
-                })
+                this.animationMoved.state = true;
+                this.animationMoved.direction = 'right'
+                animateCarousel(this.translateValue)
                 break;
-
-
         }
     }
 }
