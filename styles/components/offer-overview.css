@@ -1,0 +1,79 @@
+/* .offer-overview */
+
+@media (max-width: 575px) {
+    .offer-overview {
+        position: relative;
+        margin: auto 0;
+        height: 20rem;
+        padding: 1rem 0;
+        background-color: rgb(209, 228, 240);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* offer-overview-carousel */
+@media (max-width: 575px) {
+    .offer-overview-carousel {
+        display: flex;
+        justify-content: center;
+        min-width: 55rem;
+
+    }
+}
+
+/* .offer-overview-carousel-item */
+
+@media (max-width: 575px) {
+    .offer-overview-carousel-item {
+        display: block;
+        height: 9rem;
+        flex-basis: 9rem;
+        margin: 0 1rem;
+        background-color: rgb(125, 157, 177);
+    }
+}
+
+/* .carousel-btn */
+
+@media (max-width: 575px) {
+    .carousel-btn {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 3.5rem;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        background-color: var( --top-banner-elements-color);
+        transition: 0.1s;
+        z-index: 100;
+    }
+    .carousel-btn:active {
+        outline: none;
+        border: 1px solid black;
+    }
+ 
+   .carousel-btn span {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        font-family: roboto, sans-serif;
+    }
+}
+/* .carousel-btn-left */
+@media (max-width: 575px) {
+    .carousel-btn-left {
+        left: 1.5rem;
+    }
+
+}
+/* .carousel-btn-right */
+@media (max-width: 575px) {
+    .carousel-btn-right {
+        right: 1.5rem;
+
+    }
+
+}

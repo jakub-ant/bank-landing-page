@@ -36,12 +36,12 @@
 /* .top-banner-know-more */
 @media (max-width: 575px) {
     .top-banner-know-more {
+        display: inline-block;
         margin: 2rem;
         padding: 1rem;
         border-radius: 2rem;
         background-color: var(--top-banner-elements-bgc);
         color: var(--top-banner-elements-color);
         font: 700 1.4rem 'Roboto', sans-serif;
-
     }
 }
