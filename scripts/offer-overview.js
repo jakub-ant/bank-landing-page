@@ -33,21 +33,33 @@ export class OfferOverview {
                 fill: 'forwards'
             })
         }
+        const hideTheButton = (btn) => {
+            btn.classList.add('carousel-btn-hidden')
+        }
+
+        const showTheButton = () => {
+            this.carouselBtnLeft.classList.remove('carousel-btn-hidden');
+            this.carouselBtnRight.classList.remove('carousel-btn-hidden');
+        }
+        
         switch (checkAnimation()) {
             case 'reset':
                 this.animationMoved.state = false;
-                this.animationMoved.direction = null
+                this.animationMoved.direction = null;
+                showTheButton()
                 animateCarousel()
                 break;
             case 'left':
                 this.animationMoved.state = true;
                 this.animationMoved.direction = 'left'
-                animateCarousel(-this.translateValue)
+                hideTheButton(this.carouselBtnLeft)
+                animateCarousel((this.translateValue))
                 break;
             case 'right':
                 this.animationMoved.state = true;
                 this.animationMoved.direction = 'right'
-                animateCarousel(this.translateValue)
+                hideTheButton(this.carouselBtnRight)
+                animateCarousel(-this.translateValue)
                 break;
         }
     }
