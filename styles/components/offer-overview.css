@@ -10,6 +10,7 @@
         overflow: hidden;
         display: flex;
         justify-content: center;
+        z-index: 0;
     }
 }
 
@@ -82,7 +83,7 @@
         border-radius: 50%;
         background-color: var( --offer-overview-carousel-btn-bgc);
         transition: 0.1s;
-        z-index: 100;
+        z-index: 1;
     }
     .carousel-btn:active {
         outline: none;
@@ -101,8 +102,7 @@
    .carousel-btn span {
         display: block;
         text-align: center;
-        font-size: 2rem;
-        font-family: roboto, sans-serif;
+        font: 2rem roboto, sans-serif;
     }
 }
 /* .carousel-btn-left */

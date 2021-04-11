@@ -5,7 +5,7 @@
         min-height: 40rem;
         width: 100vw;
         background: url('../../public/interior-3539570_640.jpg') center no-repeat;
-        z-index: -1;
+        z-index: 0;
     }
 }
 

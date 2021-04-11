@@ -1,0 +1,86 @@
+/* .loan-calculator */
+@media (max-width: 575px) {
+    .loan-calculator {
+        margin: 1rem;
+        padding: 1.5rem;
+        z-index: -1;
+    }
+}
+
+/* .loan-calculator-header  */
+@media (max-width: 575px) {
+    .loan-calculator-header {
+        font: 2rem roboto, sans-serif;
+        margin: 0 0 1rem 0;
+    }
+}
+
+@media (max-width: 575px) {
+    #loan-slider {
+        margin: 0 0 2rem 0;
+        -webkit-appearance: none;
+        /* Override default CSS styles */
+        appearance: none;
+        width: 30rem;
+        height: 1.5rem;
+        /* Specified height */
+        background: var(--offer-overwiew-bgc);
+        /* Grey background */
+        /* outline: none;  */
+        /* Remove outline */
+        opacity: 0.7;
+        /* Set transparency (for mouse-over effects on hover) */
+        transition: opacity .2s;
+    }
+
+    #loan-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        /* Override default look */
+        appearance: none;
+        width: 3rem;
+        /* Set a specific slider handle width */
+        height: 3rem;
+        /* Slider handle height */
+        border: rgb(30, 30, 30) 1px solid;
+        border-radius: 50%;
+        background: var(--offer-overview-carousel-btn-bgc);
+        /* Green background */
+        cursor: pointer;
+        /* Cursor on hover */
+    }
+
+    #loan-slider::-webkit-slider-thumb:focus {
+        background-color: rgba(120, 120, 120, 0.75);
+        /* Green background */
+
+    }
+
+    #loan-slider::-moz-range-thumb {
+        width: 3rem;
+        /* Set a specific slider handle width */
+        height: 3rem;
+        /* Slider handle height */
+        cursor: pointer;
+        /* Cursor on hover */
+    }
+}
+.input-container {
+    margin: 1rem 0;
+}
+@media (max-width: 575px) {
+
+    .loan-calculator label {
+        display: inline-block;
+        font: 1.5rem roboto, sans-serif;
+        min-width: 12rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .loan-calculator input,
+    .loan-calculator select {
+        width: 12rem;
+        font: 1.2rem roboto, sans-serif;
+        padding: 0.5rem;
+    }
+}
