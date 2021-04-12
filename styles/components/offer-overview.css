@@ -19,7 +19,7 @@
     .offer-overview-carousel {
         display: flex;
         justify-content: center;
-        min-width: 55rem;
+        min-width: 60rem;
 
     }
 }
@@ -30,8 +30,8 @@
     .offer-overview-carousel-item {
         display: block;
         position: relative;
-        height: 9rem;
-        flex-basis: 9rem;
+        height: 10rem;
+        flex-basis: 10rem;
         border-radius: 50%;
         margin: 0 1rem;
         background-color: var(--offer-overview-carousel-item-bgc);
@@ -41,29 +41,23 @@
         display: block;
         position: absolute;
         top: 1rem;
-        right: 27px;
+        left: 3rem;
+        width: 4rem;
         font-size: 3.2rem;
         color: rgb(89, 43, 107, 0.8);
     }
 
-    .offer-overview-carousel-item span {
+    .offer-overview-carousel-item .offer-overview-carousel-item-text {
         display: block;
         position: absolute;
-        font: 700 1.3rem 'Roboto', sans-serif;
+        font: 700 1.1rem 'Roboto', sans-serif;
+        width: 8rem;
         top: 4.5rem;
-        left: 1.2rem;
-        padding: 0.5rem 0.6rem 0 0.5rem;
-
-        /* text-align: center; */
-        /* word-break: break-all; */
+        left: 1rem;
+        padding: 0.5rem 0.5rem 0 0.5rem;
+        text-align: center;
         color: rgba(90, 50, 100, 0.8);
     }
-
-    .offer-overview-carousel-item.text-wrap  span{
-        word-break: break-all;
-        padding: 0.5rem;
-    }
-
     .fa-mobile-alt {
         padding: 0 0.8rem;
     }
@@ -103,6 +97,9 @@
         display: block;
         text-align: center;
         font: 2rem roboto, sans-serif;
+    }
+    .carousel-btn span:hover {
+        cursor: pointer;
     }
 }
 /* .carousel-btn-left */
