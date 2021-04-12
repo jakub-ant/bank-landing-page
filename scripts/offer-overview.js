@@ -2,7 +2,7 @@ export class OfferOverview {
     carouselBtnLeft = document.querySelector('.carousel-btn-left')
     carouselBtnRight = document.querySelector('.carousel-btn-right');
     offerOverviewCarousel = document.querySelector('.offer-overview-carousel')
-    translateValue = 100;
+    translateValue = 120;
     animationDuration = 300;
     animationMoved = {
         state: false,

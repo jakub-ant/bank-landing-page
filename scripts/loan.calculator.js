@@ -11,11 +11,18 @@ export class LoanCalculator {
     }
 
     setListeners() {
+        const showCalculation = () => {
+            this.percentOfTheTotalValue = this.loanSlider.value;
+            this.monthlyPayment.value = this.countPayment()
+        }
         this.loanSlider.addEventListener('input', () => {
             this.percentOfTheTotalValue = this.loanSlider.value;
             this.loanValue.value = (this.maxValue * this.percentOfTheTotalValue) / 100
             this.monthlyPayment.value = this.countPayment()
         })
+        this.loanValue.addEventListener('input', showCalculation);
+        this.loanPeriod.addEventListener('input', showCalculation)
+
     }
 
     countPayment() {
