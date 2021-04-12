@@ -16,12 +16,13 @@
     <link rel="stylesheet" href="./styles/components/top-banner.css">
     <link rel="stylesheet" href="./styles/components/offer-overview.css">
     <link rel="stylesheet" href="./styles/components/loan-calculator.css">
+    <link rel="stylesheet" href="./styles/components/exchange-rates.css">
     <link rel="stylesheet" href="style.css">
     <title>Dobre finanse</title>
 </head>
 
 <body>
-    <div class="container"  >
+    <div class="container">
         <header class="header">
             <div class="header-container">
                 <div class="header-menu">
@@ -55,8 +56,8 @@
             </section>
             <section class="offer-overview">
                 <button class="carousel-btn carousel-btn-left" data-direction="left"> <span data-direction="left">
-                    &#60</span> </button> <button class="carousel-btn carousel-btn-right" data-direction="right"> <span
-                                data-direction="right"> ></span> </button>
+                        &#60</span> </button> <button class="carousel-btn carousel-btn-right" data-direction="right">
+                    <span data-direction="right"> ></span> </button>
                 <div class="offer-overview-carousel">
                     <div class="offer-overview-carousel-item">
                         <a href="#" class="offer-overview-carousel-item-text">Inwestycje</a>
@@ -99,18 +100,19 @@
                 </div>
                 <div class="input-container">
                     <label for="monthly-payment">Miesięczna rata</label>
-                    <input aria-readonly="true" type="number" min=0 max=30000 name="monthly-payment" id="monthly-payment"
-                        placeholder="0" readonly>
+                    <input aria-readonly="true" type="number" min=0 max=30000 name="monthly-payment"
+                        id="monthly-payment" placeholder="0" readonly>
                 </div>
             </section>
-            <section class="news">
-                <div class="exchange-rates">
-                    <h2>Kursy Wymiany Walut</h2>
-                    <div class="euro"><i class="fas fa-euro-sign"></i></div>
-                    <div class="dollar"><i class="fas fa-dollar-sign"></i></div>
-                    <div class="pound"><i class="fas fa-pound-sign"></i></div>
-                    <div class="ruble"><i class="fas fa-ruble-sign"></i></div>
+            <section class="exchange-rates">
+                <h2 class="exchange-rates-header">Kursy Wymiany Walut</h2>
+                <div class="grid-container">
+                    <div class="euro"><i class="fas fa-euro-sign"></i><span id="euro" class="currency-number"></span> PLN</div>
+                    <div class="dollar"><i class="fas fa-dollar-sign"></i><span id="dollar" class="currency-number"></span> PLN</div>
+                    <div class="pound"><i class="fas fa-pound-sign"></i><span id="pound" class="currency-number"></span> PLN</div>
+                    <div class="ruble"><i class="fas fa-ruble-sign"></i><span id="ruble" class="currency-number"></span> PLN</div>
                 </div>
+
             </section>
         </main>
         <footer>
