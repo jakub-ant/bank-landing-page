@@ -3,11 +3,11 @@ export class Header {
     headerMenuCheckbox = document.querySelector('#header-menu-checkbox');
     showList = false;
     constructor() {
-        this.setEventListeners()
-    }
+        this.setEventListeners();
+    };
     setEventListeners() {
-        this.headerMenuCheckbox.addEventListener('click', () => this.showListAnimate())
-    }
+        this.headerMenuCheckbox.addEventListener('click', () => this.showListAnimate());
+    };
 
     showListAnimate() {
         const menuAnimation = (translateValue = 0) => {
@@ -19,10 +19,10 @@ export class Header {
             });
         }
         if (this.showList) {
-            menuAnimation(-200)
+            menuAnimation(-200);
         } else {
-            menuAnimation()
-        }
-        this.showList = !this.showList
+            menuAnimation();
+        };
+        this.showList = !this.showList;
     }
 }

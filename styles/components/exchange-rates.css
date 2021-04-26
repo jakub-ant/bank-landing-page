@@ -1,42 +1,61 @@
-@media (max-width: 575px) {
+ .exchange-rates {
+    padding: 2rem 2.5rem;
+    background: var(--exchange-rates-panel-bgc);
+}
+
+@media (min-width: 575px) {
     .exchange-rates {
-        padding: 2rem 2.5rem;
-        background:  rgb(240, 240, 240, 0.7)
+        margin: 0 3rem 0 0;
+        border-radius: 1rem;
     }
 }
 
-@media (max-width: 575px) {
-    .exchange-rates-header {
-        font: 2rem roboto, sans-serif;
-        margin: 0 0 1rem 0;
-     }
+ 
+.exchange-rates-header {
+    font: 2rem roboto, sans-serif;
+    margin: 0 0 1rem 0;
 }
 
-@media (max-width: 575px) {
+ 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+    margin: 1rem 0 0 0;
+}
+
+@media (min-width: 768px) {
     .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 1rem;
-        margin: 1rem 0 0 0;
-    }
-    .grid-container div {
-        font: 1.2rem roboto, sans-serif;
-
-    }
-    .grid-container i,
-    .grid-container span {
-        font-size: 2rem;
-    }
-    .grid-container .fas {
-        width: 1.5rem;
+        margin: 3rem 0 0 0;
+        row-gap: 2rem;
     }
 }
 
-@media (max-width: 575px) {
-    .currency-number {
-        font-family: roboto, sans-serif;
-        padding: 0 0 0 1rem;
-    }
+.grid-container div {
+    font: 1.2rem var(--roboto);
+}
+ @media (min-width: 575px) {
+    .grid-container div {
+    margin: 0 1.5rem 0 0;    }
+}
 
+.grid-container i,
+.grid-container span {
+    font-size: 2rem;
+}
+
+.grid-container .fas {
+    width: 1.5rem;
+}
+
+ 
+.currency-number {
+    font-family: var(--roboto);
+    padding: 0 0 0 1rem;
+}
+@media (min-width: 575px) {
+    .currency-number{
+        padding: 0 0 0 0.5rem;
+    }
 }

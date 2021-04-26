@@ -9,11 +9,11 @@ export class OfferOverview {
         direction: null
     }
     constructor() {
-        this.setListeners()
+        this.setListeners();
     }
     setListeners() {
-        this.carouselBtnLeft.addEventListener('click', e => this.translate(e))
-        this.carouselBtnRight.addEventListener('click', e => this.translate(e))
+        this.carouselBtnLeft.addEventListener('click', e => this.translate(e));
+        this.carouselBtnRight.addEventListener('click', e => this.translate(e));
     }
 
     translate(e) {
@@ -34,7 +34,7 @@ export class OfferOverview {
             })
         }
         const hideTheButton = (btn) => {
-            btn.classList.add('carousel-btn-hidden')
+            btn.classList.add('carousel-btn-hidden');
         }
 
         const showTheButton = () => {
@@ -46,20 +46,20 @@ export class OfferOverview {
             case 'reset':
                 this.animationMoved.state = false;
                 this.animationMoved.direction = null;
-                showTheButton()
-                animateCarousel()
+                showTheButton();
+                animateCarousel();
                 break;
             case 'left':
                 this.animationMoved.state = true;
-                this.animationMoved.direction = 'left'
-                hideTheButton(this.carouselBtnLeft)
-                animateCarousel((this.translateValue))
+                this.animationMoved.direction = 'left';
+                hideTheButton(this.carouselBtnLeft);
+                animateCarousel(this.translateValue);
                 break;
             case 'right':
                 this.animationMoved.state = true;
-                this.animationMoved.direction = 'right'
-                hideTheButton(this.carouselBtnRight)
-                animateCarousel(-this.translateValue)
+                this.animationMoved.direction = 'right';
+                hideTheButton(this.carouselBtnRight);
+                animateCarousel(-this.translateValue);
                 break;
         }
     }

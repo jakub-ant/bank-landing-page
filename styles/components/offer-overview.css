@@ -1,119 +1,122 @@
 /* .offer-overview */
 
-@media (max-width: 575px) {
+.offer-overview {
+    position: relative;
+    margin: auto 0;
+    height: 12rem;
+    padding: 1rem 0;
+    background-color: var(--offer-overview-bgc);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+@media (min-width: 768px) {
     .offer-overview {
-        position: relative;
-        margin: auto 0;
-        height: 12rem;
-        padding: 1rem 0;
-        background-color: var(--offer-overwiew-bgc);
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        z-index: 0;
+        margin: auto 3rem;
+        border-radius: 1rem;
     }
 }
 
-/* offer-overview-carousel */
-@media (max-width: 575px) {
-    .offer-overview-carousel {
-        display: flex;
-        justify-content: center;
-        min-width: 60rem;
+.offer-overview-carousel {
+    display: flex;
+    justify-content: center;
+    min-width: 60rem;
 
-    }
 }
 
-/* .offer-overview-carousel-item */
+.offer-overview-carousel-item {
+    display: block;
+    position: relative;
+    height: 10rem;
+    flex-basis: 10rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+    background-color: var(--offer-overview-carousel-item-bgc);
+}
+.offer-overview-carousel-item:hover{
+    border: 2px solid rgb(109, 109, 151);
+}
 
-@media (max-width: 575px) {
-    .offer-overview-carousel-item {
-        display: block;
-        position: relative;
-        height: 10rem;
-        flex-basis: 10rem;
-        border-radius: 50%;
-        margin: 0 1rem;
-        background-color: var(--offer-overview-carousel-item-bgc);
-    }
+.offer-overview-carousel-item .fas {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    width: 4rem;
+    font-size: 3.2rem;
+    color: rgb(89, 43, 107, 0.8);
+}
 
-    .offer-overview-carousel-item .fas {
-        display: block;
-        position: absolute;
-        top: 1rem;
-        left: 3rem;
-        width: 4rem;
-        font-size: 3.2rem;
-        color: rgb(89, 43, 107, 0.8);
-    }
+.offer-overview-carousel-item:hover .fas.shake{
+    animation: shake 0.5s forwards alternate;
+}
 
-    .offer-overview-carousel-item .offer-overview-carousel-item-text {
-        display: block;
-        position: absolute;
-        font: 700 1.1rem 'Roboto', sans-serif;
-        width: 8rem;
-        top: 4.5rem;
-        left: 1rem;
-        padding: 0.5rem 0.5rem 0 0.5rem;
-        text-align: center;
-        color: rgba(90, 50, 100, 0.8);
-    }
-    .fa-mobile-alt {
-        padding: 0 0.8rem;
-    }
+.offer-overview-carousel-item .offer-overview-carousel-item-text {
+    display: block;
+    position: absolute;
+    font: 700 1.1rem var(--roboto);
+    width: 8rem;
+    top: 4.5rem;
+    left: 1rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    text-align: center;
+    color: rgba(90, 50, 100, 0.8);
+}
+
+.fa-mobile-alt {
+    padding: 0 0.8rem;
 }
 
 
 /* .carousel-btn */
 
-@media (max-width: 575px) {
+.carousel-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 4.5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--offer-overview-carousel-btn-bgc);
+    transition: 0.1s;
+    z-index: 1;
+}
+
+@media (min-width: 600px) {
     .carousel-btn {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        top: 4.5rem;
-        height: 3rem;
-        width: 3rem;
-        border-radius: 50%;
-        background-color: var( --offer-overview-carousel-btn-bgc);
-        transition: 0.1s;
-        z-index: 1;
-    }
-    .carousel-btn:active {
-        outline: none;
-        border: 1px solid black;
-    }
-    .carousel-btn-hidden {
-        animation: hideTheButton 0.5s 0.1s forwards;
-    }
-    @keyframes hideTheButton {
-        100%{
-            transform:  translateY(-200px);
-            opacity: 0
-        }
-    }
- 
-   .carousel-btn span {
-        display: block;
-        text-align: center;
-        font: 2rem roboto, sans-serif;
-    }
-    .carousel-btn span:hover {
-        cursor: pointer;
+        display: none;
     }
 }
+
+.carousel-btn:active {
+    outline: none;
+    border: 1px solid black;
+}
+
+.carousel-btn-hidden {
+    animation: hideTheButton 0.5s 0.1s forwards;
+}
+
+.carousel-btn span {
+    display: block;
+    text-align: center;
+    font: 2rem var(--roboto);
+}
+
+.carousel-btn span:hover {
+    cursor: pointer;
+}
+
 /* .carousel-btn-left */
-@media (max-width: 575px) {
-    .carousel-btn-left {
-        left: 1rem;
-    }
-
+.carousel-btn-left {
+    left: 1rem;
 }
-/* .carousel-btn-right */
-@media (max-width: 575px) {
-    .carousel-btn-right {
-        right: 1rem;
 
-    }
+/* .carousel-btn-right */
+.carousel-btn-right {
+    right: 1rem;
 
 }
