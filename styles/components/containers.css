@@ -26,16 +26,18 @@ html {
         max-width: 70rem;
         margin: 0 auto;
     }
+    .inner-container main {
+        max-width: 70rem;
+        margin: 0 auto;
+    }
 
 }
 @media (min-width: 1200px) {
     .inner-container {
         display: flex;
+        max-width: 110rem;
     }
-    .inner-container main {
-        max-width: 70rem;
-        margin: 0 auto;
-    }
+
 }
 
 @media (min-width: 575px) {
