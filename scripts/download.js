@@ -7,7 +7,6 @@ export class Download {
     hideBtnHiddenClass = 'hide-btn-hidden';
     constructor() {
         this.hideDownloadBtn.addEventListener('click', () => downloadHide.hide());
-        console.log(downloadHide)
     }
     hideThePanel() {
         this.downloadEl.classList.add(this.hideBtnHiddenClass);
