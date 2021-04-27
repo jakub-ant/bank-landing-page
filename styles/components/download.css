@@ -1,7 +1,10 @@
 .download {
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     height: var(--download-panel-height);
     background-color: rgba(235, 235, 235, 0.9);
-    position: relative;
 }
 
 .download-app {
