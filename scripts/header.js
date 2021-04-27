@@ -1,7 +1,9 @@
 export class Header {
+    headerEl = document.querySelector('.header');
     headerMenuList = document.querySelector('.header-menu-list');
     headerMenuCheckbox = document.querySelector('#header-menu-checkbox');
     showList = false;
+    hideBtnHiddenClass ='hide-btn-hidden';
     constructor() {
         this.setEventListeners();
     };
@@ -24,5 +26,13 @@ export class Header {
             menuAnimation();
         };
         this.showList = !this.showList;
+    }
+    hideThePanel() {
+        this.headerEl.classList.add(this.hideBtnHiddenClass)
+    }
+    update(model){
+        if (model.hidden) {
+        this.hideThePanel();
+        }
     }
 }

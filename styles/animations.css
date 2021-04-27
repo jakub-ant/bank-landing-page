@@ -17,7 +17,14 @@
     60% {
         transform: translateX(-0.5rem);
     }
+
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes hideDownloadPanel {
+    100% {
+        transform: translateY(-6rem);
     }
 }

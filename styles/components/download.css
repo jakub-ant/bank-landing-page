@@ -1,0 +1,62 @@
+.download {
+    height: var(--download-panel-height);
+    background-color: rgba(235, 235, 235, 0.9);
+    position: relative;
+}
+
+.download-app {
+    position: absolute;
+    left: 3rem;
+    margin: 1rem 0 0 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-family: var(--roboto);
+    border: 2px solid rgba(185, 185, 185, 0.9);
+    border-radius: 2rem;
+
+}
+
+@media (min-width: 992px) {
+    .download-app {
+        font-size: 2rem;
+        left: 10rem;
+    }
+}
+
+.download-app:hover {
+    background-color: rgba(185, 185, 185, 0.9);
+    cursor: pointer;
+}
+
+.download-app-icon {
+    padding: 0 1rem 0 0;
+}
+
+.hide-btn {
+    position: absolute;
+    right: 3rem;
+    font-family: var(--roboto);
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 1rem 0 0 0;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgba(185, 185, 185, 0.9);
+    border-radius: 2rem;
+    background-color: var(--news-article-bgc);
+    transition: 0.1s;
+}
+
+@media (min-width: 992px) {
+    .hide-btn {
+        right: 10rem;
+    }
+}
+
+.hide-btn:hover {
+    background-color: rgba(185, 185, 185, 0.9);
+    cursor: pointer;
+}
+
+.hide-btn-hidden {
+    animation: hideDownloadPanel 0.5s 1 ease-in-out forwards;
+}

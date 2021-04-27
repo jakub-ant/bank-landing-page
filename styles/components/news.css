@@ -42,7 +42,7 @@
 }
 
 .news-article:hover {
-    box-shadow: 2px 2px 2px 1px var(--news-article-border);
+    box-shadow: 2px 2px 2px 1px var(--news-article-border), -2px -2px 2px 1px var(--news-article-border);
 }
 
 .news-article * {

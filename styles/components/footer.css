@@ -1,9 +1,7 @@
 .footer {
     width: 100vw;
-    height: 5rem;
-    margin: 5rem 0 0 0;
+    height: 3rem;
     background-color: var(--footer-bgc);
-
 }
 
 @media (min-width: 1200px) {
@@ -11,5 +9,4 @@
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
     }
-
 }

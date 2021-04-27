@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
-html {
-    background-color: var(--html-basic-bgc);
-}
+    html {
+        background-color: var(--html-basic-bgc);
+    }
 }
 
 .container {
@@ -26,12 +26,13 @@ html {
         max-width: 70rem;
         margin: 0 auto;
     }
+
     .inner-container main {
         max-width: 70rem;
         margin: 0 auto;
     }
-
 }
+
 @media (min-width: 1200px) {
     .inner-container {
         display: flex;

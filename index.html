@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/animations.css">
     <link rel="stylesheet" href="./styles/components/containers.css">
     <link rel="stylesheet" href="./styles/components/header.css">
+    <link rel="stylesheet" href="./styles/components/download.css">
     <link rel="stylesheet" href="./styles/components/top-banner.css">
     <link rel="stylesheet" href="./styles/components/offer-overview.css">
     <link rel="stylesheet" href="./styles/components/loan-calculator.css">
@@ -26,6 +27,10 @@
 
 <body>
     <div class="container">
+        <div class="download">
+            <a href="#" class="download-app"><i class="fas fa-download download-app-icon"></i>Ściągnij naszą aplikację </a>
+            <button class="hide-btn" id="hide-download-btn" type="button"><i class="fas fa-arrow-up"></i>Ukryj</button>
+        </div>
         <header class="header stop-grow-lg">
             <div class="header-container">
                 <div class="header-menu">
@@ -48,7 +53,7 @@
                 </ul>
             </nav>
         </header>
-        <div class="inner-container">
+        <div class="inner-container" id="inner-container">
             <main>
                 <section class="top-banner">
                     <div class="top-banner-slogan">

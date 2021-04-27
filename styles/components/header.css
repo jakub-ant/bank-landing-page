@@ -94,7 +94,7 @@
 }
 
 .header-menu-list {
-    position: fixed;
+    position: absolute;
     top: 6rem;
     background-color: var(--menu-list-color);
     border-radius: 0 0 10px 0;
@@ -105,7 +105,7 @@
 
 @media (min-width: 992px) {
     .header-menu-list {
-        position: fixed;
+        position: absolute;
         top: 0;
         width: 100%;
         background-color: transparent;
